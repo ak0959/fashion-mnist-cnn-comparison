@@ -6,6 +6,7 @@
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
 ## 📌 Objective
+👉 View full implementation: [Jupyter Notebook](cnn.ipynb)
 This project compares the performance of a **Shallow CNN** and a **Deep CNN** on the Fashion-MNIST dataset.
 
 The goal is to analyze:
