@@ -5,37 +5,58 @@
 ![Dataset](https://img.shields.io/badge/Dataset-Fashion--MNIST-green)
 ![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
 
-## 📌 Objective
-👉 View full implementation: [Jupyter Notebook](cnn.ipynb)
-This project compares the performance of a **Shallow CNN** and a **Deep CNN** on the Fashion-MNIST dataset.
+---
 
-The goal is to analyze:
-- Accuracy
-- Efficiency
+## 🚀 Project Overview
+
+This project performs a comparative analysis between a **Shallow Convolutional Neural Network (CNN)** and a **Deep CNN** on the Fashion-MNIST dataset.
+
+It explores how increasing model complexity impacts:
+- Learning capability
 - Generalization
-- Model complexity
+- Computational efficiency
+
+📌 **Key Result:** A simpler shallow CNN slightly outperforms a deeper model on this dataset.
 
 ---
 
 ## 📊 Dataset
+
 - 60,000 training images  
 - 10,000 test images  
 - 10 classes (fashion categories)  
 - Image size: 28×28 grayscale  
+
+Fashion-MNIST is a benchmark dataset used for evaluating image classification models.
 
 ---
 
 ## ⚙️ Models Used
 
 ### 🔹 Shallow CNN
-- 1 Convolution Layer
+- 1 Convolution Layer (32 filters)
 - 1 MaxPooling Layer
-- Dense Layer
+- Flatten Layer
+- Dense Layer (128 neurons)
+- Output Layer (Softmax)
 
 ### 🔹 Deep CNN
-- 3 Convolution Layers
+- 3 Convolution Layers (32 → 64 → 128 filters)
 - 2 MaxPooling Layers
-- Dense Layer
+- Flatten Layer
+- Dense Layer (128 neurons)
+- Output Layer (Softmax)
+
+---
+
+## 🧾 Results Summary
+
+| Model        | Test Accuracy | Training Time | Parameters |
+|-------------|--------------|--------------|------------|
+| Shallow CNN | **91.85%**   | ~217 sec     | 693K       |
+| Deep CNN    | 91.12%       | ~120 sec     | 241K       |
+
+👉 **Insight:** Increasing depth did not improve performance significantly.
 
 ---
 
@@ -86,14 +107,42 @@ The goal is to analyze:
 - Shallow CNN achieved **higher accuracy**
 - Deep CNN was **more efficient (faster & fewer parameters)**
 - Both models struggled with **similar-looking classes**
-- Increasing depth did **not significantly improve performance**
+- Increasing model depth did **not significantly improve performance**
+
+---
+
+## 📚 What This Project Shows
+
+- CNN depth does not always improve accuracy  
+- Simpler architectures can generalize better  
+- Model efficiency and performance must be balanced  
+- Dataset complexity should guide model design  
 
 ---
 
 ## 🏁 Conclusion
 
 - ✅ Recommended Model: **Shallow CNN**
-- ⚡ Most Efficient: **Deep CNN**
-- 🎯 Most Accurate: **Shallow CNN**
+- ⚡ Most Efficient Model: **Deep CNN**
+- 🎯 Most Accurate Model: **Shallow CNN**
 
-👉 Simpler models can outperform deeper ones on relatively simple datasets like Fashion-MNIST.
+👉 A well-designed shallow CNN is sufficient for datasets like Fashion-MNIST, showing that complexity should be applied thoughtfully.
+
+---
+
+## 📎 Project Files
+
+- `cnn.ipynb` → Full implementation  
+- Plots and images → Performance & analysis visuals  
+
+---
+
+## 📬 Final Note
+
+This project demonstrates practical deep learning concepts including:
+- CNN architecture design
+- Model comparison
+- Overfitting analysis
+- Error interpretation
+
+It highlights that **better models are not always deeper models**.
