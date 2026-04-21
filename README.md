@@ -1,5 +1,10 @@
 # 🧠 Shallow CNN vs Deep CNN on Fashion-MNIST
 
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
+![Dataset](https://img.shields.io/badge/Dataset-Fashion--MNIST-green)
+![Status](https://img.shields.io/badge/Project-Completed-brightgreen)
+
 ## 📌 Objective
 This project compares the performance of a **Shallow CNN** and a **Deep CNN** on the Fashion-MNIST dataset.
 
